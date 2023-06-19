@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link href="style.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/77e067d227.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="mainDiv">
+      <div class="sideImgDiv">
+        <img
+          src="https://img.freepik.com/free-vector/sign-up-concept-illustration_114360-7885.jpg?w=740&t=st=1686991293~exp=1686991893~hmac=448db816d51843395ac56006d1b0cc57d336d6a4af5c265f77b5d6af5f56d54e"
+          class="sideImg"
+        />
+      </div>
+      <form>
+        <h1>Sign Up</h1>
+        <input
+          type="text"
+          name=""
+          placeholder="Username"
+          required
+          class="TextInput input-field"
+          id="namefield"
+        />
+        <input
+          type="text"
+          name=""
+          list="tech"
+          placeholder="Skill"
+          required
+          class="TextInput"
+        />
+        <datalist id="tech">
+          <option>HTML</option>
+          <option>CSS</option>
+          <option>JavaScript</option>
+          <option>Python</option>
+          <option>others</option>
+        </datalist>
+        <input
+          type="email"
+          placeholder="Enter Email"
+          name="email"
+          required
+          class="TextInput"
+        />
+        <input
+          type="tel"
+          name="phone"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"
+          placeholder="Phone Number"
+          required
+          class="TextInput"
+        />
+        <small class="SmallText">Format:123-456-7890</small>
+        <input
+          type="password"
+          name=""
+          placeholder="Password"
+          required
+          class="TextInput input-field"
+        />
+
+        <div class="checkInput">
+          <input type="checkbox" id="check" />
+          <label for="check">Remember Me</label>
+        </div>
+        <input
+          type="password"
+          name=""
+          placeholder="Confirm Password"
+          required
+          class="TextInput"
+        />
+        <p>
+          By creating an account you agree to our
+          <a href="#" style="color: dodgerblue">Terms & Privacy</a>.
+        </p>
+        <div class="firstTwoBtns">
+          <button type="submit" class="signupbtn" id="signup-btn">
+            Sign Up
+          </button>
+          <button type="button" class="cancelbtn">Cancel</button>
+        </div>
+        <p id="singinoption">
+          Do you have an account?<a href="#" style="color: red">Sign in</a>
+        </p>
+        <p class="or">OR</p>
+        <div class="nextTwoBtns">
+          <button type="button" class="signup-btn">
+            Login with Google<i class="fa-brands fa-google"></i>
+          </button>
+          <button type="button" class="signup-btn">
+            Login with facebook<i class="fa-brands fa-facebook"></i>
+          </button>
+          <button type="button" class="signup-btn">
+            Login with twitter<i class="fa-brands fa-twitter"></i>
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
